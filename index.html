@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stlyle.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora</h2>
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <button onclick="adicionarNumero('7')">7</button>
+            <button onclick="adicionarNumero('8')">8</button>
+            <button onclick="adicionarNumero('9')">9</button>
+            <button class="operator" onclick="definirOperacao('divisao')">÷</button>
+            
+            <button onclick="adicionarNumero('4')">4</button>
+            <button onclick="adicionarNumero('5')">5</button>
+            <button onclick="adicionarNumero('6')">6</button>
+            <button class="operator" onclick="definirOperacao('multiplicacao')">×</button>
+            
+            <button onclick="adicionarNumero('1')">1</button>
+            <button onclick="adicionarNumero('2')">2</button>
+            <button onclick="adicionarNumero('3')">3</button>
+            <button class="operator" onclick="definirOperacao('subtracao')">−</button>
+            
+            <button onclick="adicionarNumero('0')">0</button>
+            <button class="clear" onclick="limparDisplay()">C</button>
+            <button class="equal" onclick="calcular()">=</button>
+            <button class="operator" onclick="definirOperacao('soma')">+</button>
+            
+            <button class="exit" onclick="sairCalculadora()">Sair</button>
+        </div>
+    </div>
+    <script src="apps.js"></script>
+</body>
+</html>
