@@ -1,5 +1,5 @@
 body {
-  background: url("../assests/Fundo da Caculadora.jpg") no-repeat center center;
+  background: url("assests/Fundo da Caculadora.jpg") no-repeat center center;
   background-size: cover; /* Ensure the background image covers the entire area */
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
@@ -26,7 +26,7 @@ h2 {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background: url("../assests/Estampa da calculadora.jpg") no-repeat center center;
+  background: url("assests/Estampa da calculadora.jpg") no-repeat center center;
   background-size: cover; /* Ensure the background image covers the entire area */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.5); /* Contour shadow effect */
 
