@@ -20,7 +20,10 @@ function definirOperacao(op) {
 
     num1 = document.getElementById("display").value; // Armazena o número atual
     operacao = op; // Define a operação
-    document.getElementById("display").value = ""; // Limpa o display para o próximo número
+    // Do not clear the display for percentage operation
+    if (op !== "%") {
+        document.getElementById("display").value = ""; // Clear display for other operations
+    }
     resultadoExibido = false; // Permite a entrada de um novo número
 }
 
@@ -110,3 +113,12 @@ function sairCalculadora() {
         document.getElementById("display").value = "";
     }, 2000);
 }
+
+// Ensure to call calcularPorcentagem when the equals button is pressed
+document.getElementById("equal").addEventListener("click", function() {
+    if (operacao === "%") {
+        calcularPorcentagem();
+    } else {
+        calcular();
+    }
+});
