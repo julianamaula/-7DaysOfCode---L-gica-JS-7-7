@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="stlyle.css">
     <title>Calculadora</title>
 </head>
 <body>
     <div class="container">
-        <h2>Calculadora</h2>
+        <strong><h2>CALCULADORA</h2></strong>
         <input type="text" id="display" class="display" disabled>
         <div class="buttons">
             <button onclick="adicionarNumero('7')">7</button>
@@ -28,10 +27,14 @@
             <button class="operator" onclick="definirOperacao('subtracao')">−</button>
             
             <button onclick="adicionarNumero('0')">0</button>
+            <button onclick="adicionarNumero('.')">.</button>
             <button class="clear" onclick="limparDisplay()">C</button>
-            <button class="equal" onclick="calcular()">=</button>
             <button class="operator" onclick="definirOperacao('soma')">+</button>
+            <button class="equal" onclick="calcular()">=</button>
             
+            
+            <button class="percent" onclick="definirOperacao('%')">%</button>
+            <button class="backspace" onclick="backspace()">⌫</button>
             <button class="exit" onclick="sairCalculadora()">Sair</button>
         </div>
     </div>

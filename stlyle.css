@@ -1,66 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
+    background: url('/assests/Fundo da Caculadora.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the entire area */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    margin: 50px;
+    margin: 0; /* Remove default margin */
+    background-color: #f4f4f4;
 }
 
-h2{
-    color: white;
+
+h2 {
+    color: rgb(13, 223, 234);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
+
 .container {
     max-width: 300px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #07010b6c;
+    background: url('/assests/Estampa da calculadora.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the entire area */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+
 .display {
     width: 100%;
     height: 40px;
     text-align: right;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
 }
+
 button {
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px; /* Adjust padding for better fit */
+    font-size: 16px; /* Adjust font size for better fit */
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    background-color: #efeb09;
+    border-radius: 10px;
+    background-color: #ffcc00;
+    transition: background-color 0.3s, transform 0.2s;
 }
+
+button:hover {
+    background-color: #ffd700;
+}
+
 button:active {
-    background-color: #bbb;
+    transform: scale(0.95);
 }
+
 .operator {
     background-color: #124ef3;
     color: white;
 }
+
 .equal {
     background-color: #2ecc71;
     color: white;
     grid-column: span 2;
 }
+
 .clear {
     background-color: #e74c3c;
     color: white;
 }
+
+.percent {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.backspace {
+    background-color: #e67e22;
+    color: white;
+}
+
 .exit {
     background-color: #555;
     color: white;
     grid-column: span 2;
 }
+
 @media (max-width: 320px) {
+    h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
     .buttons {
         grid-template-columns: repeat(2, 1fr);
     }
