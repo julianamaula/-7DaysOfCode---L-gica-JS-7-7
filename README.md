@@ -13,6 +13,7 @@ Aqui você pode realizar operações matemáticas básicas de forma simples e di
 - Multiplicação ✖️
 - Divisão ➗
 - Limpar cálculo ❌
+- Porcentagem ![Image](https://github.com/user-attachments/assets/2baebbdc-399f-45e6-b694-99c47d38e6de)
 - Sair da calculadora 👋
 
 💡 **Destaques do projeto:**
